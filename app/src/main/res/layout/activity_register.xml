@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:background="@drawable/back_border_primary_dark"
+        android:padding="16dp"
+        android:drawableStart="@drawable/email_icon"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_image" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:background="@drawable/back_border_primary_dark"
+        android:padding="16dp"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_email"
+        />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Create account"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:background="@drawable/back_solid_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_password"
+        />
+
+    <TextView
+        android:id="@+id/already_have_account_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_button"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
